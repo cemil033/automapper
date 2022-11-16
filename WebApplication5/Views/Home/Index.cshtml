@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model UserSignViewModel
+
+<form asp-action="Index" asp-controller="Home" method="post">
+    <input asp-for="UserName" placeholder="username" /> <br />
+    <input asp-for="Password" placeholder="password" type="password" /> <br />
+    <input type="submit" value="Login" />
+</form>
